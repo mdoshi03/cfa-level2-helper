@@ -1,0 +1,10 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run Visa Slot Checker",
+			"type": "shell",
+			"command": "python3 src/main.py"
+		}
+	]
+}
