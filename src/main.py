@@ -18,8 +18,19 @@ SLOTS_URL = "https://app.checkvisaslots.com/slots/v3"
 def get_headers():
     return {
         'authority': 'app.checkvisaslots.com',
-        'origin': 'chrome-extension://beepaenfejnphdgnkmccjcfiieihhogl',
-        'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36',
+        'accept': '*/*',
+        'accept-encoding': 'gzip, deflate, br, zstd',
+        'accept-language': 'en-US,en;q=0.9',
+        'connection': 'keep-alive',
+        'extversion': '4.6.5.1',
+        'host': 'app.checkvisaslots.com',
+        'origin': 'moz-extension://ba22237b-9aae-4a6e-9e7b-83ba950fecdb',
+        'priority': 'u=4',
+        'sec-fetch-dest': 'empty',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-site': 'cross-site',
+        'te': 'trailers',
+        'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:149.0) Gecko/20100101 Firefox/149.0',
         'x-api-key': ACCESS_CODE,
     }
 
