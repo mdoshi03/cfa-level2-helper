@@ -13,7 +13,7 @@ EMAIL_PASS = os.getenv('EMAIL_PASS')
 RECIPIENT = os.getenv('RECIPIENT_EMAIL')
 LOCATION = os.getenv('LOCATION', 'MUMBAI')  # Default to Mumbai, change as needed
 
-SLOTS_URL = "https://app.checkvisaslots.com/slots/v1"
+SLOTS_URL = "https://app.checkvisaslots.com/slots/v3"
 
 def get_headers():
     return {
