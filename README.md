@@ -1,11 +1,15 @@
 # CFA Level II Helper
 
-A Vite + React frontend for CFA Level II reference notes and formula reels, with Supabase persistence.
+A React + Vite frontend for CFA Level II reference formulas and notes, with Supabase persistence and TikTok-style reel scrolling.
 
 ## Local setup
-1. Copy `frontend/.env.example` to `frontend/.env.local`
-2. Fill in `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY`
-3. Install frontend dependencies:
+1. Copy `frontend/.env.example` to `frontend/.env.local`.
+2. Fill in your Supabase values:
+   ```text
+   VITE_SUPABASE_URL=https://<your-project-ref>.supabase.co
+   VITE_SUPABASE_ANON_KEY=sb_publishable_x_xxx
+   ```
+3. Install dependencies:
    ```bash
    cd frontend
    npm install
@@ -15,8 +19,8 @@ A Vite + React frontend for CFA Level II reference notes and formula reels, with
    npm run dev
    ```
 
-## Deploy
-This repository includes a GitHub Actions workflow that builds `frontend/dist` and deploys to GitHub Pages.
+## Deployment
+This repo includes a GitHub Actions workflow to build `frontend/dist` and deploy to GitHub Pages.
 
 ## Environment variables
 - `VITE_SUPABASE_URL`
