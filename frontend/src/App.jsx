@@ -185,7 +185,7 @@ function App() {
   const groupedFormulaItems = useMemo(() => {
     if (activeType !== 'formula') return []
     const byCategory = filteredItems.reduce((acc, item) => {
-      const category = item.category || 'general'
+      const category = (item.category || 'general').toLowerCase()
       if (!acc[category]) acc[category] = []
       acc[category].push(item)
       return acc
@@ -196,7 +196,7 @@ function App() {
   const groupedNoteItems = useMemo(() => {
     if (activeType !== 'note') return []
     const byCategory = filteredItems.reduce((acc, item) => {
-      const category = item.category || 'general'
+      const category = (item.category || 'general').toLowerCase()
       if (!acc[category]) acc[category] = []
       acc[category].push(item)
       return acc
